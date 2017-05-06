@@ -1,0 +1,28 @@
+/*
+    Toolbox:Functions:Units
+    =======================
+*/
+
+/*
+    PX to EM
+    --------
+
+    Convert px to em
+
+    $base-font-size is used as a default so when you use the em() function you don't have to provide
+    a second parameter if your working with a element with the default font-size
+*/
+@function em($target-px, $context-px: $fs--base) {
+    @return ($target-px / $context-px) * 1em;
+    // @return $target-px; // for testing
+}
+
+/*
+    EM to PX
+    --------
+
+    Convert em to px
+*/
+@function px($target-em, $context-em) {
+    @return ($target-em * $context-em) +0px;
+}

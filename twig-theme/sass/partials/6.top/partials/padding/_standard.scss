@@ -1,0 +1,12 @@
+/*
+    Standard paddings
+*/
+.u-p     { padding: $padding !important; }
+.u-pt    { padding-top: $padding !important; }
+.u-pr    { padding-right: $padding !important; }
+.u-pb    { padding-bottom: $padding !important; }
+.u-pl    { padding-left: $padding !important; }
+.u-ph    { padding-right: $padding !important;
+           padding-left: $padding !important; }
+.u-pv    { padding-top: $padding !important;
+           padding-bottom: $padding !important; }

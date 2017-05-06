@@ -1,0 +1,14 @@
+/*
+    Base:Lists
+    ==========
+*/
+
+/*
+    1. Remove vertical spacing from nested lists. - inuit.css 0.1.0
+*/
+li {
+    > ul,
+    > ol {
+        margin-bottom: 0; /* 1 */
+    }
+}

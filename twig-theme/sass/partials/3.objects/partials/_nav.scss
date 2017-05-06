@@ -1,0 +1,73 @@
+/*
+    Objects:Nav
+    ===========
+
+    By @csswizardry and taken from a version of inuit.css https://github.com/inuitcss
+
+    When used on an `ol` or `ul`, this class throws the list into horizontal mode
+    e.g.:
+
+    Dependencies
+    ------------
+    * group (clearfix) - must be applied to the main element.
+
+    HTML
+    ----
+    <ul class=nav group>
+        <li><a href=#>Home</a></li>
+        <li><a href=#>About</a></li>
+        <li><a href=#>Portfolio</a></li>
+        <li><a href=#>Contact</a></li>
+    </ul>
+*/
+
+/*
+    1:  Set line-height so positing does not depend on the global line-height set on the html element.
+    Overwrite this value on a particular nav if you need to.
+    This way if the global line-height changes it does not effect the navigations position.
+*/
+.o-nav {
+    list-style: none;
+    margin-left: 0;
+    line-height: 1em; /* 1 */
+
+    > li {
+
+        &,
+        > a {
+            display: inline-block;
+        }
+    }
+}
+
+
+/*
+    extends .nav and throws the list into vertical mode.
+*/
+.o-nav--stacked {
+    > li {
+        display: list-item;
+
+        > a {
+            display: block;
+        }
+    }
+}
+
+
+/*
+    Force a nav to occupy 100% of the available width of its parent. Extends
+    .nav, original idea @pimpl
+*/
+.o-nav--fit {
+    display: table;
+    width: 100%;
+
+    > li {
+        display: table-cell;
+
+        > a {
+            display: block;
+        }
+    }
+}

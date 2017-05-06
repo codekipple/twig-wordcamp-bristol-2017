@@ -1,0 +1,12 @@
+/*
+    Small negative margins
+*/
+.u--m-  { margin: -$margin--small !important; }
+.u--mt- { margin-top: -$margin--small !important; }
+.u--mr- { margin-right: -$margin--small !important; }
+.u--mb- { margin-bottom: -$margin--small !important; }
+.u--ml- { margin-left: -$margin--small !important; }
+.u--mh- { margin-right: -$margin--small !important;
+          margin-left: -$margin--small !important; }
+.u--mv- { margin-top: -$margin--small !important;
+          margin-bottom: -$margin--small !important; }

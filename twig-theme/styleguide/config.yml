@@ -1,0 +1,27 @@
+title: "Welcome to Spress"
+description: "A site creted by Spress"
+logo: "spresso-logo.png"
+
+parsedown_actived: true
+
+# Collections
+collections:
+  posts:
+    output: true
+
+  projects:
+    output: true
+
+# Code highlight for <pre> and <code> tags
+# Powered by http://highlightjs.org/
+code_highlight: true
+
+include: ['/code/wordpress-sites/gettwigusetwigsmile.com/wp-content/themes/twig-theme/templates/partials']
+
+# Page menus
+top_menu:
+    - { name: Home, url: "/" }
+    - { name: Projects, url: "/projects" }
+
+bottom_menu:
+    - { name: "Go to Spresso theme web", url: "https://github.com/yosymfony/Spress-theme-spresso" }

@@ -1,0 +1,26 @@
+{
+    "name": "spress/spress-theme-spresso",
+    "type": "spress-theme",
+    "description": "Spresso theme for Spress",
+    "keywords": ["spress", "theme", "template"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Victor Puertas",
+            "email": "vpgugr@gmail.com",
+            "homepage": "http://yosymfony.com"
+        }
+    ],
+    "require": {
+        "spress/spress-installer": "2.0.*"
+    },
+    "replace": {
+        "yosymfony/spress-theme-spresso": "self.version"
+    },
+    "extra": {
+        "spress_name": "spresso",
+        "branch-alias": {
+            "dev-master": "2.0.x-dev"
+        }
+    }
+}

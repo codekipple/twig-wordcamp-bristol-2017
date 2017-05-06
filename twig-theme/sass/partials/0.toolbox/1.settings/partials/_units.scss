@@ -1,0 +1,19 @@
+/*
+    Toolbox:Settings:Units
+    ======================
+*/
+
+/*
+    Widths
+    ------
+*/
+$width--site-min: 300px;
+$width--site-max: 1280px;
+$mq-fixed-value: $width--site-max;
+
+/*
+    Spacing units
+    -------------
+*/
+$su--block: 30px;
+$su--block--half: ($su--block / 2);

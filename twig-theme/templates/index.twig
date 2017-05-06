@@ -1,0 +1,31 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<p>This theme uses Twig templates.</p>
+
+	<div class="o-layout c-widget-grid">
+		<div class="o-layout__item u-1/3">
+			<div class="c-widget-grid__item u-set-1"></div>
+		</div><!--
+		--><div class="o-layout__item u-1/3">
+			<div class="c-widget-grid__item u-set-2"></div>
+		</div><!--
+		--><div class="o-layout__item u-1/3">
+			<div class="c-widget-grid__item u-set-3"></div>
+		</div><!--
+		--><div class="o-layout__item u-1/3">
+			<div class="c-widget-grid__item u-set-4"></div>
+		</div><!--
+		--><div class="o-layout__item u-1/3">
+			<div class="c-widget-grid__item u-set-5"></div>
+		</div><!--
+		--><div class="o-layout__item u-1/3">
+			<div class="c-widget-grid__item u-set-1"></div>
+		</div>
+	</div>
+
+	<h2>Latest posts</h2>
+	{% for post in posts %}
+		{% include ['partials/tease-'~post.post_type~'.twig', 'partials/tease.twig'] %}
+	{% endfor %}
+{% endblock %}

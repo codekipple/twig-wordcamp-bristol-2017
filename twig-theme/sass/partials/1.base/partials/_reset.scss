@@ -1,0 +1,75 @@
+/*
+    Base:Reset
+    ==========
+*/
+
+/*
+    1. Use border-box globally
+*/
+*,
+*:after,
+*:before {
+    box-sizing: border-box; /* 1 */
+}
+
+/*
+    1. reset some stuff
+*/
+p,blockquote,pre,
+dl,dd,form,fieldset,legend,
+table,th,td,caption,
+hr {
+    margin: 0; /* 1 */
+    padding: 0; /* 1 */
+}
+
+/*
+    1. Correct `block` display not defined for any HTML5 element in IE 8/9. - Normalize:v3.0.3
+    1. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. - Normalize:v3.0.3
+    1. Correct `block` display not defined for `main` in IE 11. - Normalize:v3.0.3
+*/
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block; /* 1 */
+}
+
+/*
+    1. Correct `inline-block` display not defined in IE 8/9. - Normalize:v3.0.3
+    2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. - Normalize:v3.0.3
+*/
+audio,
+canvas,
+progress,
+video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+}
+
+/*
+    1. Prevent modern browsers from displaying `audio` without controls. - Normalize:v3.0.3
+    2. Remove excess height in iOS 5 devices. - Normalize:v3.0.3
+*/
+audio:not([controls]) {
+    display: none;  /* 1 */
+    height: 0; /* 2 */
+}
+
+/*
+    1. Address `[hidden]` styling not present in IE 8/9/10. - Normalize:v3.0.3
+    2. Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22. - Normalize:v3.0.3
+*/
+[hidden], /* 1 */
+template { /* 2 */
+    display: none;
+}

@@ -1,0 +1,54 @@
+/*
+    Objects:Button
+    ==============
+
+    Much of this object was taken from SUITCSS - 4.0.0
+
+    1. Corrects inability to style clickable `input` types in iOS - SUITCSS:components-button:4.0.0
+    2. Normalize `box-sizing` across all elements that this component could be applied to. - SUITCSS:components-button:4.0.0
+    3. Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+. - SUITCSS:components-button:4.0.0
+    4. Prevent button text from being selectable. - SUITCSS:components-button:4.0.0
+    5. Make sure `input` will wrap text across multiple lines. - SUITCSS:components-button:4.0.0
+*/
+
+.o-btn {
+    -webkit-appearance: none; /* 1 */
+    box-sizing: border-box; /* 2 */
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal; /* 3 */
+    margin: 0;
+    user-select: none; /* 4 */
+    white-space: normal; /* 5 */
+    position: relative;
+    text-decoration: none;
+
+    &,
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:disabled,
+    &.is-disabled {
+        cursor: default;
+    }
+
+
+    /*
+        Remove excess padding and border in Firefox 4+ - SUITCSS:components-button:4.0.0
+    */
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+}
+
+/*
+    Variations
+    ----------
+
+    e.g
+    .o-btn--primary{}
+    .o-btn--secondary{}
+    .o-btn--tertiary{}
+*/

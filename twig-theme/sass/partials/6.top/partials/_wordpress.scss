@@ -1,0 +1,51 @@
+/*
+    Top:WordPress
+    =============
+
+    Helper classes outputted by the WordPress editor.
+
+    This file is not included by default.
+*/
+
+/*
+    alignment
+    ---------
+
+    to float content and have a margin between it and content
+    typically used within CMS editors.
+*/
+.align-right {
+    float: right;
+    margin-left: em(10px);
+}
+
+.align-left {
+    float: right;
+    margin-right: em(10px);
+}
+
+.aligncenter {
+    clear: both;
+    display: block;
+    margin: 0 auto;
+}
+
+.wp-caption {
+
+}
+
+/*
+    Used to clear stuff inside the CMS editor
+*/
+.clear {
+    clear: both;
+}
+
+/*
+    1.  Force images embedded into posts to be responsive
+        Make sure images with WordPress-added height and width >attributes are scaled correctly
+*/
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; /* 1 */
+}

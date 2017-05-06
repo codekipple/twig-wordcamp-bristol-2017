@@ -1,0 +1,8 @@
+---
+layout: default
+---
+{% set isPostLayout = true %}
+
+{% block content %}
+    {% include 'post.twig' with { 'post': page } %}
+{% endblock %}

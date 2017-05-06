@@ -1,0 +1,12 @@
+/*
+    Huge negative margins
+*/
+.u--m\+\+   { margin: -$margin--huge !important; }
+.u--mt\+\+  { margin-top: -$margin--huge !important; }
+.u--mr\+\+  { margin-right: -$margin--huge !important; }
+.u--mb\+\+  { margin-bottom: -$margin--huge !important; }
+.u--ml\+\+  { margin-left: -$margin--huge !important; }
+.u--mh\+\+  { margin-right: -$margin--huge !important;
+              margin-left: -$margin--huge !important; }
+.u--mv\+\+  { margin-top: -$margin--huge !important;
+              margin-bottom: -$margin--huge !important; }

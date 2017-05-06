@@ -1,0 +1,18 @@
+/*
+    Cascade Index
+    =============
+
+
+    1.  Settings
+        Global variables that all partials can access. If you add a variable that you want to use across various partials you might want to consider adding it here.
+
+    2.  Functions
+        (hopefully) Useful functions.
+
+    3.  Mixins
+        (hopefully) Useful mixins.
+*/
+
+@import "1.settings/includes"; /* 1 */
+@import "2.functions/includes"; /* 2 */
+@import "3.mixins/includes"; /* 4 */

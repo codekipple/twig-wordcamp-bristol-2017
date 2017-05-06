@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        {% include 'head.twig' %}
+    </head>
+    <body>
+        {% include 'partials/test.twig' %}
+
+        <div class="container spresso-wrap">
+            {% block content %}
+                {{ page.content }}
+            {% endblock %}
+        </div>
+            
+        <footer id="footer">
+
+        </footer>
+    </body>
+</html>

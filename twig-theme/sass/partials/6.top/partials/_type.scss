@@ -1,0 +1,56 @@
+/*
+    Top:Type
+    ========
+*/
+
+/*
+    Text alignment
+    --------------
+*/
+.u-text--left     { text-align: left  !important; }
+.u-text--center   { text-align: center!important; }
+.u-text--right    { text-align: right !important; }
+
+/*
+    Apply capital case to an element (usually a `strong`).
+*/
+.u-caps { text-transform: uppercase !important; }
+
+/*
+    Font weights
+    ------------
+*/
+.u-weight--light      { font-weight:300!important; }
+.u-weight--normal     { font-weight:400!important; }
+.u-weight--semibold   { font-weight:600!important; }
+.u-weight--bold       { font-weight:bold!important; }
+
+/*
+    Text truncation
+    ---------------
+
+    Prevent text from wrapping onto multiple lines, and truncate with an
+    ellipsis.
+
+    1. Ensure that the node has a maximum width after which truncation can occur.
+    2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+        nodes.
+*/
+.u-text--truncate {
+    max-width: 100%; /* 1 */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
+}
+
+/*
+    font sizes
+    ----------
+*/
+.u-alpha    { font-size: em($fs--alpha); }
+.u-beta     { font-size: em($fs--beta); }
+.u-gamma    { font-size: em($fs--gamma); }
+.u-delta    { font-size: em($fs--delta); }
+.u-epsilon  { font-size: em($fs--epsilon); }
+.u-zeta     { font-size: em($fs--zeta); }

@@ -1,0 +1,38 @@
+/*
+    Base:Grouping
+    =============
+*/
+
+/*
+    1. Address margin not present in IE 8/9 and Safari 5. - Normalize:v3.0.3
+*/
+figure {
+    margin: 1em 40px; /* 1 */
+}
+
+/*
+    1. Address differences between Firefox and other browsers. - Normalize:v3.0.3
+*/
+hr {
+    -moz-box-sizing: content-box; /* 1 */
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+}
+
+/*
+    1. Contain overflow in all browsers. - Normalize:v3.0.3
+*/
+pre {
+    overflow: auto; /* 1 */
+}
+
+/*
+    1. Address odd `em`-unit font size rendering in all browsers. - Normalize:v3.0.3
+*/
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 1 */
+}

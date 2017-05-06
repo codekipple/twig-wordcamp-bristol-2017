@@ -1,0 +1,95 @@
+/*
+    Base:Type
+    =========
+*/
+
+p {
+    margin-bottom: em(20px);
+}
+
+/*
+    1. Remove underlines from potentially troublesome elements.
+*/
+u,
+ins {
+    text-decoration: none; /* 1 */
+}
+
+/*
+    1. Apply faux underline via `border-bottom`.
+*/
+ins {
+    border-bottom: 1px solid; /* 1 */
+}
+
+/*
+    1. Give a help cursor to elements that give extra info on `:hover`.
+*/
+abbr[title],
+dfn[title] {
+    cursor: help; /* 1 */
+}
+
+/*
+    1. Address styling not present in IE 8/9, Safari 5, and Chrome. - Normalize:v3.0.2
+*/
+abbr[title] {
+    border-bottom: 1px dotted; /* 1 */
+}
+
+/*
+    1. Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. - Normalize:v3.0.2
+*/
+b,
+strong {
+    font-weight: bold; /* 1 */
+}
+
+/*
+    1. Address styling not present in Safari 5 and Chrome. - Normalize:v3.0.2
+*/
+
+dfn {
+    font-style: italic; /* 1 */
+}
+
+/*
+    Address styling not present in IE 8/9. - Normalize:v3.0.2
+*/
+mark {
+    background: #ff0; /* 1 */
+    color: #000; /* 1 */
+}
+
+/*
+    1. Set consistent quote types. - Normalize:v2.1.0
+*/
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019"; /* 1 */
+}
+
+/*
+    1. Address inconsistent and variable font size in all browsers. - Normalize:v3.0.2
+*/
+small {
+    font-size: em(10px); /* 1 */
+}
+
+/*
+    1:sub-sup. Prevent `sub` and `sup` affecting `line-height` in all browsers. - Normalize:v3.0.2
+*/
+sub,
+sup {
+    font-size: 75%; /* 1:sub-sup */
+    line-height: 0; /* 1:sub-sup */
+    position: relative; /* 1:sub-sup */
+    vertical-align: baseline; /* 1:sub-sup */
+}
+
+sup {
+    top: -0.5em; /* 1:sub-sup */
+}
+
+sub {
+    bottom: -0.25em; /* 1:sub-sup */
+}

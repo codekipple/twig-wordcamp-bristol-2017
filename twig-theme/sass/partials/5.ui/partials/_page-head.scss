@@ -1,0 +1,22 @@
+.page-head {
+	background: black;
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: em(480px);
+    color: $color--beige;
+    text-align: left;
+    float: left;
+    font-size: em(16px);
+
+    a {
+    	color: $color--beige;
+    	text-decoration: none;
+    	
+    	&:hover,
+    	&:focus {
+    		color: lighten($color--beige, 30);
+    	}
+    }
+}

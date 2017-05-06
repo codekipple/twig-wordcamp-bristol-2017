@@ -1,0 +1,39 @@
+/*
+    Cascade Index
+    =============
+
+
+    This is the main includes file. Here we include each of the sections.
+    This includes file only concerns it's self with the cascade order of
+    the different sections. Each section than controls it's own internal cascade.
+
+    0.  Toolbox
+        The tools needed to author the styles. Variables, functions, breakpoints, mixins.
+
+    1.  Base
+        These are styles which effect base elements (p, a, table ect). The 'Base' section includes a reset and parts of normalize.css(https://github.com/necolas/normalize.css) are sprinkled throughout.
+
+    2.  Vendor
+        3rd party css. They are included here so that the 'Objects' and 'Ui' sections van override styles.
+
+    3.  Objects
+        Reusable patterns. May contain generic patterns like the 'Media'(http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) object but you may also fill this folder with patterns that are a little more specific to your project.
+
+    4.  Components
+        Concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you're currently looking at. Modifying these styles should be safe and have no side effects.
+
+    5.  Ui
+        The main styles for your project.
+
+    6.  Top
+        Overrides, helpers, utilities, states.
+        These classes take precedence over everything else. Only use these classes if the style is relevant across all viewports or a particular state, otherwise you end up trying to fight the classes in the cascade.
+*/
+
+@import "0.toolbox/includes"; /* 0 */
+@import "1.base/includes"; /* 1 */
+@import "2.vendor/includes"; /* 2 */
+@import "3.objects/includes"; /* 3 */
+@import "4.components/includes"; /* 4 */
+@import "5.ui/includes"; /* 4 */
+@import "6.top/includes"; /* 5 */

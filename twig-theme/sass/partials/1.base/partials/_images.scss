@@ -1,0 +1,22 @@
+/*
+    Base:Images
+    ===========
+*/
+
+/*
+    1. So that `alt` text is visually offset if images don’t load.
+    2. Fluid images.
+    3. Remove border when inside `a` element in IE 8/9. - Normalize:v3.0.3
+*/
+img {
+    font-style: italic; /* 1 */
+    max-width: 100%; /* 2 */
+    border: 0; /* 3 */
+}
+
+/*
+    1. Images in `figure` elements.
+*/
+figure > img {
+    display: block; /* 1 */
+}

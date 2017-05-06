@@ -1,0 +1,19 @@
+/*
+    Toolbox:Settings:Colors
+    =======================
+*/
+
+$color--beige: #c2af75;
+$color--green: #65b03c;
+
+// color set https://coolors.co/app/e7ecef-ffe74c-ff5964-38618c-8b8c89
+$color-set-1: #E7ECEF;
+$color-set-2: #FFE74C;
+$color-set-3: #FF5964;
+$color-set-4: #38618C;
+$color-set-5: #8B8C89;
+
+// typography
+$color--body: black;
+$color--link: $color--green;
+$color--link-hover: lighten($color--link, 30);
