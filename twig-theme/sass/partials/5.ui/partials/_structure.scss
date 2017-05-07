@@ -14,4 +14,14 @@
 .sidebar {
 	float: left;
 	width: 20%;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		margin: 0 0 10px 20px;
+		padding: 0;
+	}
 }

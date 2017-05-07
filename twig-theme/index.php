@@ -14,19 +14,19 @@ $context['posts'] = Timber::get_posts();
 $context['tweets'] = array(
 	array(
 		'link' => 'http://twitter.com/stubbornella',
-		'avi' => 'http://placehold.it/50x50',
+		'avi' => get_bloginfo('stylesheet_directory') . '/images/groot.jpg',
 		'tweet' => 'I am Groot.',
 		'time' => '@groot 12 minutes ago'
 	),
 	array(
 		'link' => 'http://twitter.com/stubbornella',
-		'avi' => 'http://placehold.it/50x50',
+		'avi' => get_bloginfo('stylesheet_directory') . '/images/groot.jpg',
 		'tweet' => 'I am Groot.',
 		'time' => '@groot 13 minutes ago'
 	),
 	array(
 		'link' => 'http://twitter.com/stubbornella',
-		'avi' => 'http://placehold.it/50x50',
+		'avi' => get_bloginfo('stylesheet_directory') . '/images/groot.jpg',
 		'tweet' => 'I am Groot.',
 		'time' => '@groot 14 minutes ago'
 	)
