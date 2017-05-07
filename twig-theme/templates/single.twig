@@ -16,9 +16,9 @@
     		<!-- comment box -->
             <section class="comment-box">
                 <!-- comments -->
-                <div class="comments">
+                <div class="comments page-section">
                     {% if post.comments %}
-                        <h3> comments </h3>
+                        <h3>Comments</h3>
                         {% for cmt in post.comments %}
                             {% include "partials/comment.twig" with {comment:cmt} %}
                         {% endfor %}
@@ -35,3 +35,5 @@
 		</article>
 	</div><!-- /content-wrapper -->
 {% endblock %}
+
+{% block tweets false %}

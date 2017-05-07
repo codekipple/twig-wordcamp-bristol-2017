@@ -1,14 +1,38 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="content-wrapper">
-		<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-			<section class="article-content">
-				<h1 class="article-h1">{{post.title}}</h1>
-				<div class="article-body">
-					{{post.content}}
+	<article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
+		<section class="article-content">
+			<h1 class="article-h1">{{post.title}}</h1>
+			<div class="article-body">
+				
+				<div class="page-section">
+					<p>These widgets are all generated from same twig template thats used on the homepage. Twig makes it easy to have a <a href="https://en.wikipedia.org/wiki/Single_source_of_truth">single source of truth</a> for HTML patterns.</p>
+
+					<p>{% include 'partials/codeblocks/widgets.twig' %}</p>
+					
+					<div class="o-layout c-widgets">
+						<div class="o-layout__item u-1/2">
+							{% include 'partials/c-widget.twig' with {
+								'title': 'Widget title',
+								'body': 'Left alight widget.',
+								'class': 'u-set-4'
+							} %}
+						</div><!--
+						--><div class="o-layout__item u-1/2">
+							{% include 'partials/c-widget.twig' with {
+								'title': 'Widget title',
+								'body': 'Centrally aligned widget.',
+								'class': 'u-set-5'
+							} %}
+						</div>
+					</div>
 				</div>
-			</section>
-		</article>
-	</div><!-- /content-wrapper -->
+
+				{{post.content}}
+			</div>
+		</section>
+	</article>
 {% endblock %}
+
+{% block tweets false %}

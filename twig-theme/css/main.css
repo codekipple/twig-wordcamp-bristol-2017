@@ -462,7 +462,7 @@ q {
     1. Address inconsistent and variable font size in all browsers. - Normalize:v3.0.2
 */
 small {
-  font-size: 0.55556em;
+  font-size: 0.77778em;
   /* 1 */
 }
 
@@ -514,6 +514,15 @@ textarea:active,
 textarea:focus {
   cursor: text;
   /* 1 */
+  border: 1px solid black;
+}
+
+.text-input,
+.text-input,
+textarea {
+  cursor: text;
+  /* 1 */
+  border: 1px solid black;
 }
 
 /*
@@ -1049,18 +1058,96 @@ svg:not(:root) {
     }
 }
 */
+/* ==========================================================================
+   #MEDIA
+   ========================================================================== */
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+.o-media {
+  display: block;
+}
+
+.o-media__img {
+  float: left;
+  margin-right: 20px;
+}
+
+.o-media__img > img {
+  display: block;
+}
+
+.o-media__body {
+  overflow: hidden;
+  display: block;
+}
+
+.o-media__body,
+.o-media__body > :last-child {
+  margin-bottom: 0;
+}
+
+/* Size variants.
+   ========================================================================== */
+/**
+ * Modify the amount of space between our image and our text. We also have
+ * reversible options for all available sizes.
+ */
+/* Gutterless media objects.
+  ========================================================================== */
+.o-media--flush > .o-media__img {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* Reversed media objects.
+   ========================================================================== */
+.o-media--reverse > .o-media__img {
+  float: right;
+  margin-right: 0;
+  margin-left: 20px;
+}
+
 /* 3 */
-.c-widget-grid__item {
+.c-widgets__item {
+  padding: 0.55556em;
   background: red;
   width: 100%;
-  height: 150px;
+  height: 100px;
   border: 3px solid #444;
   margin-bottom: 1.11111em;
+  text-align: center;
+}
+
+.c-widgets__item h3 {
+  margin-bottom: 10px;
 }
 
 /* 4 */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin-bottom: 15px;
+}
+
+h5 {
+  margin-bottom: 10px;
+}
+
 .page-head {
   background: black;
+  padding: 20px 0;
   margin-bottom: 30px;
 }
 
@@ -1081,13 +1168,89 @@ svg:not(:root) {
   color: #f1eddf;
 }
 
+.site-menu {
+  float: right;
+  margin: 0;
+}
+
 .page-foot {
   padding-top: 1.11111em;
   padding-bottom: 1.11111em;
   text-align: left;
   font-size: 0.88889em;
-  margin-top: 5.55556em;
+  margin-top: 3.88889em;
   border-top: 1px solid #eee;
+  background: #E7ECEF;
+}
+
+.footer-text {
+  float: left;
+  width: 50%;
+}
+
+.tweets {
+  float: right;
+  width: 30%;
+  font-size: 0.66667em;
+  background: #FFE74C;
+  padding: 1.11111em;
+  border: 2px solid black;
+}
+
+.tweets h3 {
+  font-size: 1.66667em;
+  margin-bottom: 10px;
+}
+
+.tweets div {
+  margin-bottom: 10px;
+}
+
+.tweets div:last-child {
+  margin-bottom: 0;
+}
+
+.main-content.has-sidebar {
+  float: right;
+  width: 79%;
+}
+
+.page-section {
+  border-top: 2px solid black;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.sidebar {
+  float: left;
+  width: 20%;
+}
+
+.comment-form small {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-comment {
+  background: #E7ECEF;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 0.77778em;
+}
+
+.form-field {
+  margin-bottom: 0.55556em;
+}
+
+.form-field label {
+  width: 100px;
+  display: inline-block;
+}
+
+.latest-posts {
+  border-top: 2px solid black;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 /*

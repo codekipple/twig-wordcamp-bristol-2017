@@ -3,29 +3,61 @@
 {% block content %}
 	<p>This theme uses Twig templates.</p>
 
-	<div class="o-layout c-widget-grid">
-		<div class="o-layout__item u-1/3">
-			<div class="c-widget-grid__item u-set-1"></div>
-		</div><!--
-		--><div class="o-layout__item u-1/3">
-			<div class="c-widget-grid__item u-set-2"></div>
-		</div><!--
-		--><div class="o-layout__item u-1/3">
-			<div class="c-widget-grid__item u-set-3"></div>
-		</div><!--
-		--><div class="o-layout__item u-1/3">
-			<div class="c-widget-grid__item u-set-4"></div>
-		</div><!--
-		--><div class="o-layout__item u-1/3">
-			<div class="c-widget-grid__item u-set-5"></div>
-		</div><!--
-		--><div class="o-layout__item u-1/3">
-			<div class="c-widget-grid__item u-set-1"></div>
-		</div>
-	</div>
+	<section class="page-section">
+		<h2>Widgets</h2>
+		<p>These widgets are all generated from one twig template. The template is included along with some values.</p> 
+		<p>{% include 'partials/codeblocks/widgets.twig' %}</p>
 
-	<h2>Latest posts</h2>
-	{% for post in posts %}
-		{% include ['partials/tease-'~post.post_type~'.twig', 'partials/tease.twig'] %}
-	{% endfor %}
+		<div class="o-layout c-widgets">
+			<div class="o-layout__item u-1/3">
+				{% include 'partials/c-widget.twig' with {
+					'title': 'Widget title',
+					'body': 'Left alight widget.',
+					'class': 'u-set-1 u-text--left'
+				} %}
+			</div><!--
+			--><div class="o-layout__item u-1/3">
+				{% include 'partials/c-widget.twig' with {
+					'title': 'Widget title',
+					'body': 'Centrally aligned widget.',
+					'class': 'u-set-2'
+				} %}
+			</div><!--
+			--><div class="o-layout__item u-1/3">
+				{% include 'partials/c-widget.twig' with {
+					'title': 'Widget title',
+					'body': 'Right aligned widget.',
+					'class': 'u-set-3 u-text--right'
+				} %}
+			</div>
+		</div>
+	</section>
+
+	<section class="page-section">
+		<h2>Latest posts</h2>
+		<p>The posts are being looped and displayed using a template. You can include a list of templates. The first template to match is used. This could be handy for specifying templates based on post_type.</p>
+		{% include 'partials/codeblocks/post.twig' %}
+
+		{% for post in posts %}
+			{% include ['partials/tease-'~post.post_type~'.twig', 'partials/tease.twig'] %}
+		{% endfor %}
+	</section>
+{% endblock %}
+
+{% block footer_content %}
+	{{ parent() }}
+
+	<div class="tweets">
+		<h3>Tweets</h3>
+		{% for tweet in tweets %}
+			{% include 'partials/o-media.twig' with {
+				'link': tweet.link,
+				'image': {
+					'src': tweet.avi,
+					'alt': tweet.tweet
+				},
+				'body': tweet.tweet ~ '<div>' ~ tweet.time ~'</div>'
+			} %}
+		{% endfor %}
+	</div>
 {% endblock %}

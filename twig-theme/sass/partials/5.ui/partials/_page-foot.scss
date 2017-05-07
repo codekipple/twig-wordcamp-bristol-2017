@@ -3,6 +3,34 @@
     padding-bottom: em(20px);
 	text-align: left;
     font-size: em(16px);
-    margin-top: em(100px);	
+    margin-top: em(70px);	
     border-top: 1px solid #eee;
+    background: $color-set-1;
+}
+
+.footer-text {
+	float: left;
+	width: 50%;
+}
+
+.tweets {
+	float: right;
+	width: 30%;
+	font-size: em(12px);
+	background: $color-set-2;
+	padding: em(20px);
+	border: 2px solid black;
+
+	h3 {
+		font-size: em(30px);
+		margin-bottom: 10px;
+	}
+
+	div {
+		margin-bottom: 10px;
+	}
+
+	div:last-child {
+		margin-bottom: 0;
+	}
 }

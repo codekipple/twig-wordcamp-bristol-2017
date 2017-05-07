@@ -1,1 +1,6 @@
-Sidebar in Timber. Add HTML to your hearts content.
+<h3>Recent Posts</h3>
+<ul>
+	{% for post in posts %}
+		<li><a href="{{post.link}}">{{post.title}}</a></li>
+	{% endfor %}
+</ul>

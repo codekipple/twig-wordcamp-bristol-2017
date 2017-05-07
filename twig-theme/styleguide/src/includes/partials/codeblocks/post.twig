@@ -1,0 +1,8 @@
+{% set code %}{{ 
+
+"{% for post in posts %}
+	{% include ['partials/tease-'~post.post_type~'.twig', 'partials/tease.twig'] %}
+{% endfor %}"
+
+}}{% endset %}
+<pre><code class="language-twig">{{ code }}</code></pre>

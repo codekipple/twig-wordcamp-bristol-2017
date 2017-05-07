@@ -7,14 +7,31 @@
  * E.g., it puts together the home page when no home.php file exists
  *
  * Methods for TimberHelper can be found in the /lib sub-directory
- *
- * @package  WordPress
- * @subpackage  Timber
- * @since   Timber 0.1
  */
 
 $context = Timber::get_context();
 $context['posts'] = Timber::get_posts();
+$context['tweets'] = array(
+	array(
+		'link' => 'http://twitter.com/stubbornella',
+		'avi' => 'http://placehold.it/50x50',
+		'tweet' => 'I am Groot.',
+		'time' => '@groot 12 minutes ago'
+	),
+	array(
+		'link' => 'http://twitter.com/stubbornella',
+		'avi' => 'http://placehold.it/50x50',
+		'tweet' => 'I am Groot.',
+		'time' => '@groot 13 minutes ago'
+	),
+	array(
+		'link' => 'http://twitter.com/stubbornella',
+		'avi' => 'http://placehold.it/50x50',
+		'tweet' => 'I am Groot.',
+		'time' => '@groot 14 minutes ago'
+	)
+);
+
 $templates = array( 'index.twig' );
 if ( is_home() ) {
 	array_unshift( $templates, 'home.twig' );

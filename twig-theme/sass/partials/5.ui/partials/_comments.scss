@@ -1,0 +1,22 @@
+.comment-form {
+	small {
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+.blog-comment {
+	background: $color-set-1;
+	padding: 20px;
+	margin-bottom: 20px;
+	font-size: em(14px);
+}
+
+.form-field {
+	margin-bottom:  em(10px);
+
+	label {
+		width: 100px;
+		display: inline-block;
+	}
+}

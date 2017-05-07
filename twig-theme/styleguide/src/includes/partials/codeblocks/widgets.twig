@@ -1,0 +1,10 @@
+{% set code %}{{ 
+
+"{% include 'partials/c-widget.twig' with {
+	'title': 'Widget title',
+	'body': 'Left alight widget.',
+	'class': 'u-set-1 u-text--left'
+} %}"
+
+}}{% endset %}
+<pre><code class="language-twig">{{ code }}</code></pre>

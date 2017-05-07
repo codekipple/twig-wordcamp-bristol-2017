@@ -1,5 +1,6 @@
 .page-head {
 	background: black;
+    padding: 20px 0;
     margin-bottom: 30px;
 }
 
@@ -19,4 +20,9 @@
     		color: lighten($color--beige, 30);
     	}
     }
+}
+
+.site-menu {
+    float: right;
+    margin: 0;
 }

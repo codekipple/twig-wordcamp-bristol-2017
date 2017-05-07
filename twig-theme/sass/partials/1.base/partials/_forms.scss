@@ -20,6 +20,14 @@ option {
 textarea:active,
 textarea:focus {
     cursor: text; /* 1 */
+    border: 1px solid black;
+}
+
+.text-input,
+.text-input,
+textarea {
+    cursor: text; /* 1 */
+    border: 1px solid black;
 }
 
 

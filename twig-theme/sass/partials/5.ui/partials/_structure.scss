@@ -1,0 +1,17 @@
+.main-content {
+	&.has-sidebar {
+		float: right;
+		width: 79%;
+	}
+}
+
+.page-section {
+	border-top: 2px solid black;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.sidebar {
+	float: left;
+	width: 20%;
+}
