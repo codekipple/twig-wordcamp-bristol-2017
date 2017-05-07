@@ -35,7 +35,8 @@ var cssCompile = function(devMode) {
             this.emit('end');
         })) /* 2 */
         .pipe(Postcss(processors)) /* 3 */
-        .pipe(Gulp.dest('styleguide/src/content/assets/wp-css')) /* 4 */
+        .pipe(Gulp.dest('css')) /* 4 */
+        .pipe(Gulp.dest('styleguide/src/content/assets/css')) /* 4 */
         .pipe(BrowserSync.stream()); /* 5 */
 };
 
