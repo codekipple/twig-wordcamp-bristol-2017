@@ -1129,7 +1129,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   margin-top: 0;
 }
 
@@ -1471,3 +1472,21 @@ img[class*="wp-image-"] {
 }
 
 /* 5 */
+/*
+    Cascade Index
+    =============
+*/
+.sidebar li {
+  list-style: none;
+  margin: 0 0 0.27778em 0;
+}
+
+.example {
+  margin-bottom: 1.11111em;
+  padding: 0 0 1.11111em 0;
+  border-bottom: 2px solid black;
+}
+
+.example .output {
+  margin-bottom: 20px;
+}

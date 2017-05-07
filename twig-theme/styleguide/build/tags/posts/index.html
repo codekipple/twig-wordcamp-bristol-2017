@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 <title>Welcome to Spress</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="A site creted by Spress">
@@ -12,12 +12,21 @@
 <link href="/assets/prism/prism.css" rel="stylesheet" media="screen">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-core.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-twig.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-markup.min.js"></script>
 
-<link href="/assets/wp-css/main.css" rel="stylesheet" media="screen">
-<link href="/assets/css/style.css" rel="stylesheet" media="screen">    </head>
-    <body>
-        this is the testing
-        <div class="container spresso-wrap">
+<link href="/assets/css/main.css" rel="stylesheet" media="screen">
+<link href="/assets/css/styleguide.css" rel="stylesheet" media="screen"></head>
+<body>
+    <header class="page-head u-clearfix">
+                    <div class="u-constrict u-clearfix">
+                <div class="logo" role="banner">
+                    <a href="/" rel="home">Styleguide</a>
+                </div>
+            </div>
+            </header>
+
+    <main role="main" class="u-constrict u-clearfix">
+        <div class="main-content has-sidebar">
                 <div class="page-header">
     <h1>posts <small>tag</small></h1>
 </div>
@@ -37,9 +46,40 @@
 
 
         </div>
-            
-        <footer id="footer">
 
+        <aside class="sidebar">
+             <ul class="list-inline">
+        <li><a href="/">
+        Home</a>
+    </li>
+        <li><a href="/type">
+        Typeography</a>
+    </li>
+        <li><a href="/buttons">
+        Buttons</a>
+    </li>
+        <li><a href="/widgets">
+        Widgets</a>
+    </li>
+        <li><a href="/media-object">
+        Media Object</a>
+    </li>
+        <li><a href="/tease">
+        Tease</a>
+    </li>
+        <li><a href="/code">
+        Code Highlight</a>
+    </li>
+    </ul>
+        </aside>
+    </main>
+            
+            <footer class="page-foot">
+            <div class="u-constrict u-clearfix">
+                                    <div class="footer-text">
+                        <p>Copyright 2017</p>
+                    </div>
+                            </div>
         </footer>
     </body>
 </html>

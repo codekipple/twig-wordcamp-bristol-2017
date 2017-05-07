@@ -1,0 +1,15 @@
+{% set example %}
+{% include template with vars %}
+{% endset %}
+<div class="example">
+	<h4>{{ title }}</h4>
+	{{ description }}
+	<div class="output">
+		{{ example }}
+	</div>
+
+	<h4>Code</h4>
+	<div class="markup">
+		<pre><code class="language-html">{{ example|e }}</code></pre>
+	</div>
+</div>

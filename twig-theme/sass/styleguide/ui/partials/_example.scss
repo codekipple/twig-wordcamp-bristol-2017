@@ -1,0 +1,10 @@
+.example {
+	margin-bottom: em(20px);
+	padding: 0 0 em(20px) 0;
+	border-bottom: 2px solid black;
+	// border-top: 2px solid black;
+
+	.output {
+		margin-bottom: 20px;
+	}
+}

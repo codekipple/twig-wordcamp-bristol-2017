@@ -1,19 +1,41 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        {% include 'head.twig' %}
-    </head>
-    <body>
-        {% include 'partials/test.twig' %}
+<head>
+    {% include 'head.twig' %}
+</head>
+<body>
+    <header class="page-head u-clearfix">
+        {% block header %}
+            <div class="u-constrict u-clearfix">
+                <div class="logo" role="banner">
+                    <a href="/" rel="home">Styleguide</a>
+                </div>
+            </div>
+        {% endblock %}
+    </header>
 
-        <div class="container spresso-wrap">
+    <main role="main" class="u-constrict u-clearfix">
+        <div class="main-content has-sidebar">
             {% block content %}
                 {{ page.content }}
             {% endblock %}
         </div>
-            
-        <footer id="footer">
 
+        <aside class="sidebar">
+             {% include 'menu.twig' with { menu: site.side_menu } %}
+        </aside>
+    </main>
+            
+    {% block footer %}
+        <footer class="page-foot">
+            <div class="u-constrict u-clearfix">
+                {% block footer_content %}
+                    <div class="footer-text">
+                        <p>Copyright {{ "now"|date('Y') }}</p>
+                    </div>
+                {% endblock %}
+            </div>
         </footer>
-    </body>
+    {% endblock %}
+</body>
 </html>

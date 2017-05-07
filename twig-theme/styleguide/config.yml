@@ -19,9 +19,12 @@ code_highlight: true
 include: ['/code/wordpress-sites/gettwigusetwigsmile.com/wp-content/themes/twig-theme/templates/partials']
 
 # Page menus
-top_menu:
+side_menu:
     - { name: Home, url: "/" }
-    - { name: Projects, url: "/projects" }
+    - { name: Typeography, url: "/type" }
+    - { name: Buttons, url: "/buttons" }
+    - { name: Widgets, url: "/widgets" }
+    - { name: Media Object, url: "/media-object" }
+    - { name: Tease, url: "/tease" }
+    - { name: Code Highlight, url: "/code" }
 
-bottom_menu:
-    - { name: "Go to Spresso theme web", url: "https://github.com/yosymfony/Spress-theme-spresso" }
