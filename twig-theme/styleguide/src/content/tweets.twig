@@ -1,0 +1,27 @@
+---
+layout: "page"
+title: "Tweets"
+description: "Tweets."
+---
+<h1>Tweets</h1>
+
+{% include 'example.twig' with {
+	'title': 'Tweets',
+	'template': 'partials/tweets.twig',
+	'vars': {
+		'tweets': [
+			{
+				'link': 'https://twitter.com/codekipple',
+				'avi': site.url ~ '/assets/img/carl.jpg',
+				'tweet': 'WP + Twig :)',
+				'time': '@codekipple 2 minutes ago' 
+			},
+			{
+				'link': 'https://twitter.com/codekipple',
+				'avi': site.url ~ '/assets/img/carl.jpg',
+				'tweet': 'Twig is super fun',
+				'time': '@codekipple 3 minutes ago' 
+			}
+		]
+	}
+} %}

@@ -1190,12 +1190,15 @@ h5 {
 }
 
 .tweets {
-  float: right;
-  width: 30%;
   font-size: 0.83333em;
   background: #FFE74C;
   padding: 1.11111em;
   border: 2px solid black;
+}
+
+.tweets.page-foot {
+  float: right;
+  width: 30%;
 }
 
 .tweets a {

@@ -14,12 +14,15 @@
 }
 
 .tweets {
-	float: right;
-	width: 30%;
 	font-size: em(15px);
 	background: $color-set-2;
 	padding: em(20px);
 	border: 2px solid black;
+
+	&.page-foot {
+		float: right;
+		width: 30%;
+	}
 
 	a {
 		width: 40px;

@@ -47,17 +47,5 @@
 {% block footer_content %}
 	{{ parent() }}
 
-	<div class="tweets">
-		<h3>Tweets</h3>
-		{% for tweet in tweets %}
-			{% include 'partials/o-media.twig' with {
-				'link': tweet.link,
-				'image': {
-					'src': tweet.avi,
-					'alt': tweet.tweet
-				},
-				'body': tweet.tweet ~ '<div>' ~ tweet.time ~'</div>'
-			} %}
-		{% endfor %}
-	</div>
+	{% include 'partials/tweets.twig' with { 'tweets': tweets } %}
 {% endblock %}

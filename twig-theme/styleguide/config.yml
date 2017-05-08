@@ -22,9 +22,8 @@ include: ['/code/wordpress-sites/gettwigusetwigsmile.com/wp-content/themes/twig-
 side_menu:
     - { name: Home, url: "/" }
     - { name: Typeography, url: "/type" }
-    - { name: Buttons, url: "/buttons" }
     - { name: Widgets, url: "/widgets" }
     - { name: Media Object, url: "/media-object" }
+    - { name: Tweets, url: "/tweets" }
     - { name: Tease, url: "/tease" }
-    - { name: Code Highlight, url: "/code" }
 

@@ -1,15 +1,21 @@
+{% if template %}
 {% set example %}
 {% include template with vars %}
 {% endset %}
+{% else %}
+{% set example %}
+{{ code }}
+{% endset %}
+{% endif %}
 <div class="example">
 	<h4>{{ title }}</h4>
 	{{ description }}
-	<div class="output">
+	<div class="output u-clearfix">
 		{{ example }}
 	</div>
 
 	<h4>Code</h4>
 	<div class="markup">
-		<pre><code class="language-html">{{ example|e }}</code></pre>
+	<pre><code class="language-{% if type %}{{ type }}{% else %}markup{% endif %}">{{ example|e }}</code></pre>
 	</div>
 </div>
