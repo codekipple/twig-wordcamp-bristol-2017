@@ -14,7 +14,7 @@
     a {
     	color: $color--beige;
     	text-decoration: none;
-    	
+
     	&:hover,
     	&:focus {
     		color: lighten($color--beige, 30);
@@ -25,4 +25,8 @@
 .site-menu {
     float: right;
     margin: 0;
+
+    ul {
+        margin: 0;
+    }
 }
