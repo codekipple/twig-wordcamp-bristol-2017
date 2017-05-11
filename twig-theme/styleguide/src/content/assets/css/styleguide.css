@@ -1196,7 +1196,7 @@ h5 {
   border: 2px solid black;
 }
 
-.tweets.page-foot {
+.page-foot .tweets {
   float: right;
   width: 30%;
 }

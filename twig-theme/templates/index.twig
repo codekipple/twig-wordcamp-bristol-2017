@@ -1,51 +1,51 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<p>This theme uses Twig templates.</p>
+    <p>This theme uses Twig templates.</p>
 
-	<section class="page-section">
-		<h2>Widgets</h2>
-		<p>These widgets are all generated from one twig template. The template is included along with some values.</p> 
-		<p>{% include 'partials/codeblocks/widgets.twig' %}</p>
+    <section class="page-section">
+        <h2>Widgets</h2>
+        <p>These widgets are all generated from one twig template. The template is included along with some values.</p>
+        <p>{% include 'partials/codeblocks/widgets.twig' %}</p>
 
-		<div class="o-layout c-widgets">
-			<div class="o-layout__item u-1/3">
-				{% include 'partials/c-widget.twig' with {
-					'title': 'Widget title',
-					'body': 'Left alight widget.',
-					'class': 'u-set-1 u-text--left'
-				} %}
-			</div><!--
-			--><div class="o-layout__item u-1/3">
-				{% include 'partials/c-widget.twig' with {
-					'title': 'Widget title',
-					'body': 'Centrally aligned widget.',
-					'class': 'u-set-2'
-				} %}
-			</div><!--
-			--><div class="o-layout__item u-1/3">
-				{% include 'partials/c-widget.twig' with {
-					'title': 'Widget title',
-					'body': 'Right aligned widget.',
-					'class': 'u-set-3 u-text--right'
-				} %}
-			</div>
-		</div>
-	</section>
+        <div class="o-layout c-widgets">
+            <div class="o-layout__item u-1/3">
+                {% include 'partials/c-widget.twig' with {
+                    'title': 'Widget title',
+                    'body': 'Left alight widget.',
+                    'class': 'u-set-1 u-text--left'
+                } %}
+            </div><!--
+            --><div class="o-layout__item u-1/3">
+                {% include 'partials/c-widget.twig' with {
+                    'title': 'Widget title',
+                    'body': 'Centrally aligned widget.',
+                    'class': 'u-set-2'
+                } %}
+            </div><!--
+            --><div class="o-layout__item u-1/3">
+                {% include 'partials/c-widget.twig' with {
+                    'title': 'Widget title',
+                    'body': 'Right aligned widget.',
+                    'class': 'u-set-3 u-text--right'
+                } %}
+            </div>
+        </div>
+    </section>
 
-	<section class="page-section">
-		<h2>Latest posts</h2>
-		<p>The posts are being looped and displayed using a template. You can include a list of templates. The first template to match is used. This could be handy for specifying templates based on post_type.</p>
-		{% include 'partials/codeblocks/post.twig' %}
+    <section class="page-section">
+        <h2>Latest posts</h2>
+        <p>The posts are being looped and displayed using a template. You can include a list of templates. The first template to match is used. This could be handy for specifying templates based on post_type.</p>
+        {% include 'partials/codeblocks/post.twig' %}
 
-		{% for post in posts %}
-			{% include ['partials/tease-'~post.post_type~'.twig', 'partials/tease.twig'] %}
-		{% endfor %}
-	</section>
+        {% for post in posts %}
+            {% include ['partials/tease-'~post.post_type~'.twig', 'partials/tease.twig'] %}
+        {% endfor %}
+    </section>
 {% endblock %}
 
 {% block footer_content %}
-	{{ parent() }}
+    {{ parent() }}
 
-	{% include 'partials/tweets.twig' with { 'tweets': tweets } %}
+    {% include 'partials/tweets.twig' with { 'tweets': tweets } %}
 {% endblock %}

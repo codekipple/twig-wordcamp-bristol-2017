@@ -1,13 +1,13 @@
-{% set code %}{{ 
+{% set code %}{{
 
 '{% block footer_content %}
-	Footer text
+    Footer text
 {% endblock %}
 
 {% block footer_content %}
     {{ parent() }}
     content...
-{% endblock %}' 
+{% endblock %}'
 
 }}{% endset %}
 <pre><code class="language-twig">{{ code }}</code></pre>
