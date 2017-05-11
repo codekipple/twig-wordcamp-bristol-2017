@@ -1,12 +1,13 @@
 {% block html_head_container %}
 <!doctype html>
-<html {{  site.language_attributes }}>
+<html {{ site.language_attributes }}>
 <head>
     {% include 'partials/head.twig' %}
 </head>
 {% endblock %}
 
 <body class="{{ body_class }}" data-template="base.twig">
+
     <header class="page-head u-clearfix">
         {% block header %}
             <div class="u-constrict u-clearfix">
@@ -49,5 +50,6 @@
         </footer>
         {{ function('wp_footer') }}
     {% endblock %}
+
 </body>
 </html>
