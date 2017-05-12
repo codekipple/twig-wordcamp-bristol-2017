@@ -3,3 +3,19 @@
 	padding-top: 20px;
 	margin-top: 20px;
 }
+
+.homepage-widgets {
+    div > div {
+        background-color: $color-set-2;
+    }
+
+    div:first-child > div {
+        text-align: left;
+        background-color: $color-set-1;
+    }
+
+    div:last-child > div {
+        text-align: right;
+        background-color: $color-set-3;
+    }
+}

@@ -11,21 +11,15 @@
 
                     <p>{% include 'partials/codeblocks/widgets.twig' %}</p>
 
-                    <div class="o-layout c-widgets">
-                        <div class="o-layout__item u-1/2">
-                            {% include 'partials/c-widget.twig' with {
-                                'title': 'Widget title',
-                                'body': 'Centrally aligned widget.',
-                                'class': 'u-set-4'
-                            } %}
-                        </div><!--
-                        --><div class="o-layout__item u-1/2">
-                            {% include 'partials/c-widget.twig' with {
-                                'title': 'Widget title',
-                                'body': 'Centrally aligned widget.',
-                                'class': 'u-set-5'
-                            } %}
-                        </div>
+                    <div class="o-layout page-widgets">
+                        {% for widget in widgets %}
+                            {{ loop.index != loop.first ? '-->' : '' }}<div class="o-layout__item u-1/2">
+                                {% include 'partials/c-widget.twig' with {
+                                    'title': widget.title,
+                                    'body': widget.body
+                                } %}
+                            </div>{{ loop.index != loop.last ? '<!--' : '' }}
+                        {% endfor %}
                     </div>
                 </div>
 

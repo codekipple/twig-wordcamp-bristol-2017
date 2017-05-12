@@ -1,0 +1,9 @@
+.page-widgets {
+    div > div {
+        background-color: $color-set-4;
+    }
+
+    div:last-child > div {
+        background-color: $color-set-5;
+    }
+}

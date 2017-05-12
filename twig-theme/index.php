@@ -32,6 +32,21 @@ $context['tweets'] = array(
 	)
 );
 
+$context['widgets'] = array(
+	array(
+		'title' => 'Homepage Widget 1',
+		'body' => 'Left aligned widget.',
+	),
+	array(
+		'title' => 'Homepage Widget 2',
+		'body' => 'Centrally aligned widget.',
+	),
+	array(
+		'title' => 'Homepage Widget 3',
+		'body' => 'Right aligned widget.',
+	)
+);
+
 $templates = array( 'index.twig' );
 if ( is_home() ) {
 	array_unshift( $templates, 'home.twig' );

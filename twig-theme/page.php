@@ -18,6 +18,18 @@
  */
 
 $context = Timber::get_context();
-$post = new TimberPost();
+$post = new TimberPost(); // Gets post retrieved from WordPress
 $context['post'] = $post;
+
+$context['widgets'] = array(
+    array(
+        'title' => 'Page Widget 1',
+        'body' => 'Centrally aligned widget.',
+    ),
+    array(
+        'title' => 'Page Widget 2',
+        'body' => 'Centrally aligned widget.',
+    ),
+);
+
 Timber::render( array( 'page-' . $post->post_name . '.twig', 'page.twig' ), $context );

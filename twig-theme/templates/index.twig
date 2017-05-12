@@ -8,28 +8,15 @@
         <p>These widgets are all generated from one twig template. The template is included along with some values.</p>
         <p>{% include 'partials/codeblocks/widgets.twig' %}</p>
 
-        <div class="o-layout c-widgets">
-            <div class="o-layout__item u-1/3">
-                {% include 'partials/c-widget.twig' with {
-                    'title': 'Widget title',
-                    'body': 'Left aligned widget.',
-                    'class': 'u-set-1 u-text--left'
-                } %}
-            </div><!--
-            --><div class="o-layout__item u-1/3">
-                {% include 'partials/c-widget.twig' with {
-                    'title': 'Widget title',
-                    'body': 'Centrally aligned widget.',
-                    'class': 'u-set-2'
-                } %}
-            </div><!--
-            --><div class="o-layout__item u-1/3">
-                {% include 'partials/c-widget.twig' with {
-                    'title': 'Widget title',
-                    'body': 'Right aligned widget.',
-                    'class': 'u-set-3 u-text--right'
-                } %}
-            </div>
+        <div class="o-layout homepage-widgets">
+            {% for widget in widgets %}
+                {{ loop.index != loop.first ? '-->' : '' }}<div class="o-layout__item u-1/3">
+                    {% include 'partials/c-widget.twig' with {
+                        'title': widget.title,
+                        'body': widget.body
+                    } %}
+                </div>{{ loop.index != loop.last ? '<!--' : '' }}
+            {% endfor %}
         </div>
     </section>
 
