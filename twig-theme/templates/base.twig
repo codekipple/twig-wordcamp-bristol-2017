@@ -8,22 +8,20 @@
 
 <body class="{{ body_class }}" data-template="base.twig">
 
-    <header class="page-head u-clearfix">
-        {% block header %}
-            <div class="u-constrict u-clearfix">
-                <div class="logo" role="banner">
-                    <a href="{{site.url}}" rel="home">{{site.name}}</a>
-                </div>
+    {% block header %}
+        <header class="page-head u-clearfix">
+                <div class="u-constrict u-clearfix">
+                    <div class="logo" role="banner">
+                        <a href="{{site.url}}" rel="home">{{site.name}}</a>
+                    </div>
 
-                {% include "partials/menu.twig" with {'menu': menu.get_items} %}
-            </div>
-        {% endblock %}
-    </header>
+                    {% include "partials/menu.twig" with {'menu': menu.get_items} %}
+                </div>
+        </header>
+    {% endblock %}
 
     <main role="main" class="u-constrict u-clearfix">
         <div class="main-content {% if sidebar %}has-sidebar{% endif %}">
-            {% if title %}<h1>{{title}}</h1>{% endif %}
-
             {% block content %}
                 Sorry, no content
             {% endblock %}
@@ -41,7 +39,7 @@
             <div class="u-constrict u-clearfix">
                 {% block footer_content %}
                     <div class="footer-text">
-                        <p>The footer contains tweets but only when on the homepage. With Twig this is very easy. Defining a Twig block for the footer content in the base template it gives other templates that extend the base the ability to redefine the block. Not the use of <code class="language-twig">{{ '{{ parent() }}' }}</code>.</p>
+                        <p>The footer contains tweets but only when on the homepage. With Twig this is very easy. Defining a Twig block for the footer content in the base template it gives other templates that extend the base the ability to redefine the block. Note the use of <code class="language-twig">{{ '{{ parent() }}' }}</code>.</p>
                         {% include "partials/codeblocks/footer.twig" %}
                         <p>Copyright {{ "now"|date('Y') }}</p>
                     </div>
