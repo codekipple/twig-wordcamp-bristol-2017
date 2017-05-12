@@ -1,10 +1,10 @@
-	</main>
+    </main>
 
     <footer class="page-foot">
         <div class="u-constrict u-clearfix">
             <div class="footer-text">
                 <p>The footer contains tweets but only when on the homepage.</p>
-    			<p>Copyright <?php echo date('Y'); ?></p>
+                <p>Copyright <?php echo date('Y'); ?></p>
             </div>
 
             <?php if (is_home()): ?>
@@ -50,6 +50,6 @@
         </div>
     </footer>
 
-	<?php wp_footer(); ?>
+    <?php wp_footer(); ?>
 </body>
 </html>
