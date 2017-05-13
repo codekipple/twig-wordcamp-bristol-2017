@@ -13,6 +13,20 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-core.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-twig.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-markup.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+<script type="text/javascript">
+Prism.plugins.NormalizeWhitespace.setDefaults({
+	'remove-trailing': true,
+	'remove-indent': true,
+	'left-trim': true,
+	'right-trim': true,
+	/*'break-lines': 80,
+	'tabs-to-spaces': 4,
+	'indent': 1,
+	'remove-initial-line-feed': false,
+	'spaces-to-tabs': 4*/
+});
+</script>
 
 <link href="/assets/css/main.css" rel="stylesheet" media="screen">
 <link href="/assets/css/styleguide.css" rel="stylesheet" media="screen"></head>
@@ -68,20 +82,17 @@
         <li><a href="/type">
         Typeography</a>
     </li>
-        <li><a href="/buttons">
-        Buttons</a>
-    </li>
         <li><a href="/widgets">
         Widgets</a>
     </li>
         <li><a href="/media-object">
         Media Object</a>
     </li>
+        <li><a href="/tweets">
+        Tweets</a>
+    </li>
         <li><a href="/tease">
         Tease</a>
-    </li>
-        <li><a href="/code">
-        Code Highlight</a>
     </li>
     </ul>
         </aside>

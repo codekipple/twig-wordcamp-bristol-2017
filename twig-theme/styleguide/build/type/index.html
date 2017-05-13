@@ -13,6 +13,20 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-core.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-twig.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-markup.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+<script type="text/javascript">
+Prism.plugins.NormalizeWhitespace.setDefaults({
+	'remove-trailing': true,
+	'remove-indent': true,
+	'left-trim': true,
+	'right-trim': true,
+	/*'break-lines': 80,
+	'tabs-to-spaces': 4,
+	'indent': 1,
+	'remove-initial-line-feed': false,
+	'spaces-to-tabs': 4*/
+});
+</script>
 
 <link href="/assets/css/main.css" rel="stylesheet" media="screen">
 <link href="/assets/css/styleguide.css" rel="stylesheet" media="screen"></head>
@@ -29,23 +43,48 @@
         <div class="main-content has-sidebar">
                 <h1>Typeography</h1>
 
-<h2>Body Text</h2>
+<div class="example">
+	<h4>Body Text</h4>
+	
+	<div class="output u-clearfix">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo modo? Ita prorsus, inquam; Si mala non sunt, iacet omnis ratio Peripateticorum. Duo Reges: constructio interrete. Indicant pueri, in quibus ut in speculis natura cernitur. Non est ista, inquam, Piso, magna dissensio.<p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo modo? Ita prorsus, inquam; Si mala non sunt, iacet omnis ratio Peripateticorum. Duo Reges: constructio interrete. Indicant pueri, in quibus ut in speculis natura cernitur. Non est ista, inquam, Piso, magna dissensio.</p>
 
-<h2>Headings</h2>
+	</div>
 
-<h1>h1 Heading</h1>
+	<h4>Code</h4>
+	<div class="markup">
+	<pre><code class="language-markup">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quo modo? Ita prorsus, inquam; Si mala non sunt, iacet omnis ratio Peripateticorum. Duo Reges: constructio interrete. Indicant pueri, in quibus ut in speculis natura cernitur. Non est ista, inquam, Piso, magna dissensio.&lt;p&gt;
 
+</code></pre>
+	</div>
+</div>
+<div class="example">
+	<h4>Headings</h4>
+	
+	<div class="output u-clearfix">
+		<h1>h1 Heading</h1>
 <h2>h2 Heading</h2>
-
-<h3>h3 Heading</h3>
-
+<h3>H3 Heading</h3>
 <h4>h4 Heading</h4>
-
 <h5>h5 Heading</h5>
-
 <h6>h6 Heading</h6>
+
+
+	</div>
+
+	<h4>Code</h4>
+	<div class="markup">
+	<pre><code class="language-markup">&lt;h1&gt;h1 Heading&lt;/h1&gt;
+&lt;h2&gt;h2 Heading&lt;/h2&gt;
+&lt;h3&gt;H3 Heading&lt;/h3&gt;
+&lt;h4&gt;h4 Heading&lt;/h4&gt;
+&lt;h5&gt;h5 Heading&lt;/h5&gt;
+&lt;h6&gt;h6 Heading&lt;/h6&gt;
+
+</code></pre>
+	</div>
+</div>
 
         </div>
 
@@ -57,20 +96,17 @@
         <li><a href="/type">
         Typeography</a>
     </li>
-        <li><a href="/buttons">
-        Buttons</a>
-    </li>
         <li><a href="/widgets">
         Widgets</a>
     </li>
         <li><a href="/media-object">
         Media Object</a>
     </li>
+        <li><a href="/tweets">
+        Tweets</a>
+    </li>
         <li><a href="/tease">
         Tease</a>
-    </li>
-        <li><a href="/code">
-        Code Highlight</a>
     </li>
     </ul>
         </aside>

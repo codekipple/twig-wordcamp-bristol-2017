@@ -13,6 +13,20 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-core.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-twig.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/components/prism-markup.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.6.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
+<script type="text/javascript">
+Prism.plugins.NormalizeWhitespace.setDefaults({
+	'remove-trailing': true,
+	'remove-indent': true,
+	'left-trim': true,
+	'right-trim': true,
+	/*'break-lines': 80,
+	'tabs-to-spaces': 4,
+	'indent': 1,
+	'remove-initial-line-feed': false,
+	'spaces-to-tabs': 4*/
+});
+</script>
 
 <link href="/assets/css/main.css" rel="stylesheet" media="screen">
 <link href="/assets/css/styleguide.css" rel="stylesheet" media="screen"></head>
@@ -32,55 +46,61 @@
 <div class="example">
 	<h4>Left aligned</h4>
 	
-	<div class="output">
-		<div class="c-widgets__item u-set-1 u-text--left">
-	<h3>Widget title</h3>
-	<p>Left alight widget.</p>
+	<div class="output u-clearfix">
+		<div class="c-widget u-set-1 u-text--left">
+    <h3>Widget title</h3>
+    <p>Left alight widget.</p>
 </div>
+
 	</div>
 
 	<h4>Code</h4>
 	<div class="markup">
-		<pre><code class="language-html">&lt;div class=&quot;c-widgets__item u-set-1 u-text--left&quot;&gt;
-	&lt;h3&gt;Widget title&lt;/h3&gt;
-	&lt;p&gt;Left alight widget.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class=&quot;c-widget u-set-1 u-text--left&quot;&gt;
+    &lt;h3&gt;Widget title&lt;/h3&gt;
+    &lt;p&gt;Left alight widget.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 	</div>
 </div>
 <div class="example">
 	<h4>Centrally aligned</h4>
 	
-	<div class="output">
-		<div class="c-widgets__item u-set-2">
-	<h3>Widget title</h3>
-	<p>Centrally aligned widget.</p>
+	<div class="output u-clearfix">
+		<div class="c-widget u-set-2">
+    <h3>Widget title</h3>
+    <p>Centrally aligned widget.</p>
 </div>
+
 	</div>
 
 	<h4>Code</h4>
 	<div class="markup">
-		<pre><code class="language-html">&lt;div class=&quot;c-widgets__item u-set-2&quot;&gt;
-	&lt;h3&gt;Widget title&lt;/h3&gt;
-	&lt;p&gt;Centrally aligned widget.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class=&quot;c-widget u-set-2&quot;&gt;
+    &lt;h3&gt;Widget title&lt;/h3&gt;
+    &lt;p&gt;Centrally aligned widget.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 	</div>
 </div>
 <div class="example">
 	<h4>Right aligned</h4>
 	
-	<div class="output">
-		<div class="c-widgets__item u-set-3 u-text--right">
-	<h3>Widget title</h3>
-	<p>Right aligned widget.</p>
+	<div class="output u-clearfix">
+		<div class="c-widget u-set-3 u-text--right">
+    <h3>Widget title</h3>
+    <p>Right aligned widget.</p>
 </div>
+
 	</div>
 
 	<h4>Code</h4>
 	<div class="markup">
-		<pre><code class="language-html">&lt;div class=&quot;c-widgets__item u-set-3 u-text--right&quot;&gt;
-	&lt;h3&gt;Widget title&lt;/h3&gt;
-	&lt;p&gt;Right aligned widget.&lt;/p&gt;
-&lt;/div&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class=&quot;c-widget u-set-3 u-text--right&quot;&gt;
+    &lt;h3&gt;Widget title&lt;/h3&gt;
+    &lt;p&gt;Right aligned widget.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
 	</div>
 </div>
         </div>
@@ -93,20 +113,17 @@
         <li><a href="/type">
         Typeography</a>
     </li>
-        <li><a href="/buttons">
-        Buttons</a>
-    </li>
         <li><a href="/widgets">
         Widgets</a>
     </li>
         <li><a href="/media-object">
         Media Object</a>
     </li>
+        <li><a href="/tweets">
+        Tweets</a>
+    </li>
         <li><a href="/tease">
         Tease</a>
-    </li>
-        <li><a href="/code">
-        Code Highlight</a>
     </li>
     </ul>
         </aside>

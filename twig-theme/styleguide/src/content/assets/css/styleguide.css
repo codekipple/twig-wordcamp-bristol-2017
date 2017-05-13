@@ -1110,18 +1110,26 @@ svg:not(:root) {
 }
 
 /* 3 */
-.c-widgets__item {
+.c-widget {
   padding: 0.55556em;
   background: red;
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   border: 3px solid #444;
   margin-bottom: 1.11111em;
   text-align: center;
 }
 
-.c-widgets__item h3 {
+.c-widget h3 {
   margin-bottom: 10px;
+}
+
+.c-widget__foot {
+  background: white !important;
+  text-align: left;
+  margin: 0 -10px -10px;
+  padding: 10px;
+  text-align: left;
 }
 
 /* 4 */
@@ -1171,6 +1179,10 @@ h5 {
 
 .site-menu {
   float: right;
+  margin: 0;
+}
+
+.site-menu ul {
   margin: 0;
 }
 
@@ -1271,12 +1283,34 @@ h5 {
   margin-top: 20px;
 }
 
+.homepage-widgets div > .c-widget {
+  background-color: #FFE74C;
+}
+
+.homepage-widgets div:first-child > .c-widget {
+  text-align: left;
+  background-color: #E7ECEF;
+}
+
+.homepage-widgets div:last-child > .c-widget {
+  text-align: right;
+  background-color: #FF5964;
+}
+
 /*
     UI:Inbox
     ========
 
     The inbox is for styles added quickly that need sorting in to a more appropriate area later.
 */
+.page-widgets div > div {
+  background-color: #38618C;
+}
+
+.page-widgets div:last-child > div {
+  background-color: #8B8C89;
+}
+
 /* 4 */
 /*
     Overrides, helpers, utilities, states
@@ -1340,11 +1374,79 @@ h5 {
 
 /*
 Create more grid sizes below:-
-
-@include respond('min-width', $bp--grid-small) {
-    @include inuit-widths(1 2 3 4 5, -small);
-}
 */
+@media only screen and (min-width: 36.25em) {
+  .u-1\/1-small {
+    width: 100% !important;
+  }
+  .u-1\/2-small {
+    width: 50% !important;
+  }
+  .u-1\/3-small {
+    width: 33.33333% !important;
+  }
+  .u-2\/3-small {
+    width: 66.66667% !important;
+  }
+  .u-1\/4-small {
+    width: 25% !important;
+  }
+  .u-2\/4-small {
+    width: 50% !important;
+  }
+  .u-3\/4-small {
+    width: 75% !important;
+  }
+  .u-1\/5-small {
+    width: 20% !important;
+  }
+  .u-2\/5-small {
+    width: 40% !important;
+  }
+  .u-3\/5-small {
+    width: 60% !important;
+  }
+  .u-4\/5-small {
+    width: 80% !important;
+  }
+}
+
+@media only screen and (min-width: 50em) {
+  .u-1\/1-med {
+    width: 100% !important;
+  }
+  .u-1\/2-med {
+    width: 50% !important;
+  }
+  .u-1\/3-med {
+    width: 33.33333% !important;
+  }
+  .u-2\/3-med {
+    width: 66.66667% !important;
+  }
+  .u-1\/4-med {
+    width: 25% !important;
+  }
+  .u-2\/4-med {
+    width: 50% !important;
+  }
+  .u-3\/4-med {
+    width: 75% !important;
+  }
+  .u-1\/5-med {
+    width: 20% !important;
+  }
+  .u-2\/5-med {
+    width: 40% !important;
+  }
+  .u-3\/5-med {
+    width: 60% !important;
+  }
+  .u-4\/5-med {
+    width: 80% !important;
+  }
+}
+
 /*
     Top:Floats
     ==========
@@ -1452,6 +1554,7 @@ img[class*="wp-image-"] {
 .u-constrict {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .u-set-1 {
