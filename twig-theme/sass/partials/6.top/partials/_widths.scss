@@ -17,10 +17,10 @@
 /*
 Create more grid sizes below:-
 */
-@include respond('min-width', 800px) {
-    @include inuit-widths(1 2 3 4 5, -med);
-}
-
 @include respond('min-width', 580px) {
     @include inuit-widths(1 2 3 4 5, -small);
+}
+
+@include respond('min-width', 800px) {
+    @include inuit-widths(1 2 3 4 5, -med);
 }
