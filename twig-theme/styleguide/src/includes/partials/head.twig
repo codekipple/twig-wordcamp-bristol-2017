@@ -1,4 +1,4 @@
-<meta charset="{{site.charset}}" />
+<meta charset="{{ site.charset }}" />
 <title>
     {% if wp_title %}
         {{ wp_title }} - {{ site.name }}
@@ -6,12 +6,18 @@
         {{ site.name }}
     {% endif %}
 </title>
-<meta name="description" content="{{site.description}}">
-<link rel="stylesheet" href="{{site.theme.link}}/css/main.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="{{site.theme.link}}/prism/prism.css" type="text/css" media="screen" />
-<script type="text/javascript" src="{{site.theme.link}}/prism/prism.js"></script>
+
+{% if site.theme.parent %}
+    {% set themelink = site.theme.parent.link %}
+{% else %}
+    {% set themelink = site.theme.link %}
+{% endif %}
+<meta name="description" content="{{ site.description }}">
+<link rel="stylesheet" href="{{ themelink }}/css/main.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="{{ themelink }}/prism/prism.css" type="text/css" media="screen" />
+<script type="text/javascript" src="{{ themelink }}/prism/prism.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="pingback" href="{{site.pingback_url}}" />
+<link rel="pingback" href="{{ site.pingback_url }}" />
 {{function('wp_head')}}
 
 {% block head %}
