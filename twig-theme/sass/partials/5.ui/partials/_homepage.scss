@@ -5,16 +5,16 @@
 }
 
 .homepage-widgets {
-    div > div {
+    div > .c-widget {
         background-color: $color-set-2;
     }
 
-    div:first-child > div {
+    div:first-child > .c-widget {
         text-align: left;
         background-color: $color-set-1;
     }
 
-    div:last-child > div {
+    div:last-child > .c-widget {
         text-align: right;
         background-color: $color-set-3;
     }
