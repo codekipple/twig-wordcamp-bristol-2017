@@ -1,6 +1,8 @@
 # WordCamp Bristol 2017 talk project files
 ## Get Twig. Use Twig. Smile.
 
+[[https://github.com/codekipple/twig-wordcamp-bristol-2017/blob/master/twig-cape.jpg|alt=Twig cartoon character wearing a cape]]
+
 Talk slides [https://slides.com/codekipple/get-twig-use-twig-smile](https://slides.com/codekipple/get-twig-use-twig-smile).
 
 Three example themes for you to play with:-
