@@ -22,5 +22,5 @@ You can view the styleguide in two ways:-
     -   Follow the [getting started](http://spress.yosymfony.com/docs/getting-started/) page on the Spress.
     - Using the command line `cd` into that directory and run `./watch.sh`, this will start Spress's built in server and serve the site from `http://localhost:4000`
 
-![Twig cartoon character wearing a cape](https://github.com/codekipple/twig-wordcamp-bristol-2017/blob/master/twig-cape.jpg =550x)
+![Twig cartoon character wearing a cape](https://github.com/codekipple/twig-wordcamp-bristol-2017/blob/master/twig-cape.jpg)
 
