@@ -22,5 +22,12 @@ You can view the styleguide in two ways:-
     -   Follow the [getting started](http://spress.yosymfony.com/docs/getting-started/) page on the Spress.
     - Using the command line `cd` into that directory and run `./watch.sh`, this will start Spress's built in server and serve the site from `http://localhost:4000`
 
+### Notes on symlinks
+The partials directory in `twig-theme/styleguide/src/includes` contains all the twig templates shared by `twig-theme` and the styleguide. Unfortunately I could not get symlinked folders to work inside the styleguide so I've had to place the files within the styleguide and symlink them out to the main folder of `twig-them`.
+
+It would be better if there was a way in Spress to specify other directories outside of the Spress folder to look in when generating the static site.
+
+I think this might not be too hard to do so I plan on giving it a go an submitting it patch to Spress if I manage it.
+
 ![Twig cartoon character wearing a cape](https://github.com/codekipple/twig-wordcamp-bristol-2017/blob/master/twig-cape.jpg)
 
