@@ -1,8 +1,6 @@
 # WordCamp Bristol 2017 talk project files
 ## Get Twig. Use Twig. Smile.
 
-![Twig cartoon character wearing a cape](https://github.com/codekipple/twig-wordcamp-bristol-2017/blob/master/twig-cape.jpg)
-
 Talk slides [https://slides.com/codekipple/get-twig-use-twig-smile](https://slides.com/codekipple/get-twig-use-twig-smile).
 
 Three example themes for you to play with:-
@@ -23,4 +21,6 @@ You can view the styleguide in two ways:-
 2. Install Spress and run Spress local server
     -   Follow the [getting started](http://spress.yosymfony.com/docs/getting-started/) page on the Spress.
     - Using the command line `cd` into that directory and run `./watch.sh`, this will start Spress's built in server and serve the site from `http://localhost:4000`
+
+![Twig cartoon character wearing a cape](https://github.com/codekipple/twig-wordcamp-bristol-2017/blob/master/twig-cape.jpg =550x)
 
